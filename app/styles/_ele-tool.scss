@@ -1,0 +1,57 @@
+//背景图片高度控制器
+@media (max-width: $screen-xs-max) {
+  .xs-bg-height {
+    background-size: auto 100%;
+  }
+  .sm-bg-height {
+    background-size: auto 100%;
+  }
+  .md-bg-height {
+    background-size: auto 100%;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .xs-bg-height {
+    background-size: 100% auto;
+  }
+  .sm-bg-height {
+    background-size: auto 100%;
+  }
+  .md-bg-height {
+    background-size: auto 100%;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .xs-bg-height {
+    background-size: 100% auto;
+  }
+  .sm-bg-height {
+    background-size: 100% auto;
+  }
+  //16:9
+  .md-bg-height {
+    background-size: auto 100%;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .xs-bg-height {
+    background-size: 100% auto;
+  }
+  .sm-bg-height {
+    background-size: 100% auto;
+  }
+  .md-bg-height {
+    background-size: 100% auto;
+  }
+}
+
+.text-white {
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}

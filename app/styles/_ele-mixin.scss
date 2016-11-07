@@ -1,0 +1,12 @@
+//背景附加
+@mixin after-bg{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+}
+

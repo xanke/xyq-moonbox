@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xank webtool</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body data-ng-app="app">
+
+  <div class="container wp-main" ng-controller="itemCtrl">
+    <div class=" page-header text-center">
+      <h2>十五门派月光提示器</h2>
+      <!-- <p><a class="btn btn-primary">编辑</a></p> -->
+    </div>
+    <ul class="list-group list-xyq-item">
+      <li class="list-group-item" ng-repeat="db in item">
+        <div class="box">
+          <p class="title"><i class="glyphicon glyphicon-map-marker"></i>{{db.local}}</p>
+          <strong>{{db.name}}</strong>
+          <hr>
+          <p>{{db.fly | date: "hh:mm:ss"}}</p>
+          <p>{{db.level}}层</p>
+          <p>还剩 <strong>{{ (60 * 60 * 1000 - db.level * 120 * 1000) - (time - db.fly) | date:"mm:ss"}}</strong></p>
+          <a class="btn btn-primary btn-block" ng-click="fly(db.id)">飞行</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
