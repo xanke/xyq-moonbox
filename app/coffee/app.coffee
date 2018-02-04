@@ -2,5 +2,3 @@
 angular.module('app', [
   'app.xyqmenpai'
 ])
-
-

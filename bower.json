@@ -1,5 +1,5 @@
 {
-  "name": "xank-webtool",
+  "name": "xyq-moonbox",
   "private": false,
   "main": "app/scripts/main.js",
   "dependencies": {
@@ -8,12 +8,5 @@
     "angular": "angular2#^1.5.8"
   },
   "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
   }
 }
